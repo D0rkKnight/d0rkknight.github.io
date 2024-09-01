@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+
+import React from 'react';
+import { AppBar, Toolbar, Typography } from '@mui/material';
+import AchievementsList from './components/AchievementsList';
+import { ThemeProvider, CssBaseline } from '@mui/material';
+import theme from './theme'; // Import the custom theme
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <ThemeProvider theme={theme}>
+            <CssBaseline />
+            <AppBar position="static">
+                <Toolbar>
+                    <Typography variant="h6">
+                        Hanzen Shou
+                    </Typography>
+                </Toolbar>
+            </AppBar>
+            <AchievementsList />
+        </ThemeProvider>
+    );
 }
 
 export default App;
