@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+# Vitesse theme for Astro
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A minimal, SEO-friendly portfolio and blog theme for Astro, supports Vue and UnoCSS.
 
-## Available Scripts
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d5bae292-6116-4c52-af4b-05eadedccc60/deploy-status)](https://app.netlify.com/sites/kevinwong865/deploys)
 
-In the project directory, you can run:
+## Preview
 
-### `npm start`
+![Preview Image](./public/preview.jpg)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 100 / 100 Lighthouse performance.
+- Responsive.
+- SEO-friendly.
+- Light / Dark Theme.
+- Markdown support.
+- <a target="_blank" href="https://mdxjs.com/">MDX</a> (components in your markdown) support.
+- <a target="_blank" href="https://vuejs.org/">Vue</a> SFC component support.
+- Auto generated sitemap and RSS Feed <a target="_blank" href="https://vueuse.org/">VueUse</a> & <a target="_blank" href="https://lodash.com/">Lodash</a> support.
+- Use the <a target="_blank" href="https://unocss.dev/">UnoCSS</a> for style, it's fast.
 
-### `npm test`
+## Lighthouse Performance
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Lighthouse Performance Image](./public/lighthouse.jpg)
 
-### `npm run build`
+## Quick Start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[![Deploy to Netlify Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/kevinwong865/astro-theme-vitesse)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Click this button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+If you  just want to develop locally, you can [create a repo](https://github.com/kevinwong865/astro-theme-vitesse/generate) from this template on GitHub.
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Just run and visit http://localhost:1977.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npn run dev
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> Node.js version 18 or higher is required for this project.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To build the App, you can run:
 
-## Learn More
+```bash
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You will then see the `dist` folder generated for publishing, which you can preview locally with the following command.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run preview
+```
 
-### Code Splitting
+## Use pnpm / yarn
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+If you want to use pnpm or yarn as a package management tool, please refer to the following steps.
 
-### Analyzing the Bundle Size
+> If `preinstall` exists in `scripts`, remove it first.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### pnpm
 
-### Making a Progressive Web App
+Replace `"pre-commit": "npx lint-staged"` in package.json with `"pre-commit": "pnpm lint-staged"`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+And replace `"*": "npm run lint:fix"` with `"*": "pnpm lint:fix"`.
 
-### Advanced Configuration
+Like this:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```json
+{
+  // ...
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "pnpm lint:fix"
+  }
+}
+```
 
-### Deployment
+### yarn
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Replace `"pre-commit": "npx lint-staged"` in package.json with `"pre-commit": "yarn lint-staged"`.
 
-### `npm run build` fails to minify
+And replace `"*": "npm run lint:fix"` with `"*": "yarn lint:fix"`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Like this:
+
+```json
+{
+  // ...
+  "simple-git-hooks": {
+    "pre-commit": "yarn lint-staged"
+  },
+  "lint-staged": {
+    "*": "yarn lint:fix"
+  }
+}
+```
+
+## License
+
+[MIT License](./LICENSE) © 2024 [Kieran Wong](https://github.com/kieranwong9865/)
