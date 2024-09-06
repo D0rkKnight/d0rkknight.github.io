@@ -5,7 +5,12 @@ import siteConfig from '@/site-config'
 
 <BaseLayout description={siteConfig.description}>
   <article class="prose">
-    <h1 class="text-title">Hanzen Shou</h1>
+    <!-- Container for image and title -->
+    <div class="flex items-center space-x-4">
+      <!-- Image of you next to the title -->
+      <img src="/profile-pic.jpg" alt="Hanzen Shou" class="profile-pic" />
+      <h1 class="text-title" style="margin-bottom: 0px">Hanzen Shou</h1>
+    </div>
     <p>Hi, I'm Hanzen Shou. Welcome to my personal portfolio site.</p>
     <p>
       I’m currently a fourth-year Computer Science student at UC San Diego with
