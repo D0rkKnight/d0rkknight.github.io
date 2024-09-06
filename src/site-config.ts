@@ -1,13 +1,13 @@
 export const siteConfig = {
-  author: 'Kevin Wong',
-  title: 'Vitesse theme for Astro',
-  subtitle: 'Vitesse theme for Astro, supports Vue and UnoCSS.',
-  description: 'A Minimal, SEO-friendly portfolio and blog theme for Astro.',
+  author: 'Hanzen Shou',
+  title: 'Hanzen\'s Portfolio',
+  subtitle: 'Portfolio site for Hanzen Shou',
+  description: 'A Portfolio site outlining some of my accomplishments and projects',
   image: {
     src: '/hero.jpg',
     alt: 'Website Main Image',
   },
-  email: 'kevinwong865@gmail.com',
+  email: 'shouhanzen@gmail.com',
   socialLinks: [
     {
       text: 'GitHub',
@@ -43,22 +43,22 @@ export const siteConfig = {
       alt: 'Logo Image',
     },
     navLinks: [
-      {
-        text: 'Blog',
-        href: '/blog',
-      },
-      {
-        text: 'Notes',
-        href: '/blog/notes',
-      },
-      {
-        text: 'Talks',
-        href: '/blog/talks',
-      },
-      {
-        text: 'Projects',
-        href: '/projects',
-      },
+      // {
+      //   text: 'Blog',
+      //   href: '/blog',
+      // },
+      // {
+      //   text: 'Notes',
+      //   href: '/blog/notes',
+      // },
+      // {
+      //   text: 'Talks',
+      //   href: '/blog/talks',
+      // },
+      // {
+      //   text: 'Projects',
+      //   href: '/projects',
+      // },
     ],
   },
   page: {
@@ -87,12 +87,12 @@ export const siteConfig = {
         text: 'Markdown Style',
         href: '/md-style',
       },
+      // {
+      //   text: 'View on Astro',
+      //   href: 'https://astro.build/themes/details/vitesse-theme-for-astro/',
+      // },
       {
-        text: 'View on Astro',
-        href: 'https://astro.build/themes/details/vitesse-theme-for-astro/',
-      },
-      {
-        text: 'GitHub Repository',
+        text: 'Theme GitHub Repository',
         href: 'https://github.com/kevinwong865/astro-theme-vitesse',
       },
     ],
