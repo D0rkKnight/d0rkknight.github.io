@@ -8,76 +8,103 @@ import siteConfig from '@/site-config'
     <h1 class="text-title">Hanzen Shou</h1>
     <p>Hi, I'm Hanzen Shou. Welcome to my personal portfolio site.</p>
     <p>
-      I’m currently a fourth-year Computer Science student at UC San Diego with a passion for 
-      machine learning, digital twin simulation, and computer graphics. Over the years, I've had the 
-      opportunity to work on diverse projects in the tech industry, ranging from cloud infrastructure to 
-      machine learning applications. I’m self-driven, eager to learn, and always looking for new challenges.
+      I’m currently a fourth-year Computer Science student at UC San Diego with
+      a passion for machine learning, digital twin simulation, and computer
+      graphics. Over the years, I've had the opportunity to work on diverse
+      projects in the tech industry, ranging from cloud infrastructure to
+      machine learning applications. I’m self-driven, eager to learn, and always
+      looking for new challenges.
     </p>
     <p>
-      Throughout my academic and professional career, I’ve developed strong technical skills in 
-      languages like Python and C++, and I’ve built web technologies using React.js, FastAPI, and Node.js. 
-      Whether it’s working on cloud infrastructure with Docker and Kubernetes, or building machine learning 
-      applications using PyTorch, I aim to bridge the gap between theoretical knowledge and practical, impactful work.
+      Throughout my academic and professional career, I’ve developed strong
+      technical skills in languages like Python, C++, and Javascript. I’ve built
+      web technologies using React.js, FastAPI, and Node.js. Whether it’s
+      working on cloud infrastructure with Kubernetes and AWS CDK, or building
+      machine learning applications using PyTorch, I aim to bridge the gap
+      between theoretical knowledge and practical, impactful work.
     </p>
-    
+
     <h2>Skills</h2>
     <ul>
-      <li><strong>Languages:</strong> Python, C/C++, Bash, Shell</li>
-      <li><strong>Cloud Infrastructure:</strong> Docker, Kubernetes, Helm, AWS, Google Cloud</li>
-      <li><strong>Web Technologies:</strong> React.js, Node.js, FastAPI, Next.js, Electron</li>
-      <li><strong>Machine Learning:</strong> PyTorch, Huggingface, vllm</li>
-      <li><strong>Tool Automation:</strong> Make, CMake, GitHub Actions</li>
+      <li>
+        <strong>Languages:</strong> Python, C/C++, Javascript, Bash, Shell
+      </li>
+      <li>
+        <strong>Cloud Infrastructure:</strong> Docker, Kubernetes, Helm, AWS, Google
+        Cloud
+      </li>
+      <li>
+        <strong>Web Technologies:</strong> React.js, Node.js, FastAPI, Next.js, Electron
+      </li>
+      <li><strong>Machine Learning:</strong> PyTorch, Huggingface</li>
+      <li>
+        <strong>Tool Automation:</strong> Make, CMake, GitHub Actions, Jenkins
+      </li>
     </ul>
-    
+
     <h2>Academic and Professional Experience</h2>
     <p>
-      I’ve been fortunate to work with companies like Autodesk and Qualcomm Institute, where I’ve 
-      honed my engineering skills and contributed to impactful projects such as the Design Based Code 
-      Generation Platform and TritonGPT. My work has accelerated development timelines and improved system 
-      efficiency in both academic and professional settings.
+      I’ve been fortunate to work with organizations like Autodesk, the Qualcomm
+      Institute, and UCSD's ITS, where I’ve honed my engineering skills and
+      contributed to impactful projects such as the Design Based Code Generation
+      Platform, Cognitive City Twins, and TritonGPT. My work has accelerated
+      development timelines and improved system efficiency in both academic and
+      professional settings.
     </p>
 
     <h2>Selected Projects</h2>
     <ul>
-      <li><strong>Image Segmentation AI</strong> - Worked on a deep learning model capable of segmenting 
-      image data with 70% accuracy, collaborating closely with a team of four developers.</li>
-      <li><strong>Digital Twin Model</strong> - Collaborated with a team of 8 to create a digital twin model 
-      of UC San Diego, synchronizing with the team to ensure smooth integration and weekly progress updates.</li>
-      <li><strong>TritonGPT</strong> - Developed a chatbot to assist 560+ leadership members at UC San Diego, 
-      significantly speeding up development by 75% and supporting over 3,000 students and 50+ instructors.</li>
+      <li>
+        <strong>Design Based Code Generation Platform</strong> - Developed a platform
+        to generate code from design mockups, reducing development time by 50% and
+        improving code quality by 30%
+      </li>
+      <li>
+        <strong>Cognitive City Twins</strong> - Collaborated with a team of 8 to
+        create a digital twin model of UC San Diego and the Chula Vista Bayfront,
+        synchronizing with the team to ensure smooth integration of datasources and
+        engaging in weekly progress updates.
+      </li>
+      <li>
+        <strong>TritonGPT</strong> - Developed a chatbot to staff and student body
+        of UC San Diego, significantly speeding up development by 75% and ensuring
+        system reliability
+      </li>
     </ul>
 
     <h2>Contact Me</h2>
     <p>
-      Feel free to reach out to me via email at 
-      <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a> or connect with me on LinkedIn. 
-      I’m always open to discussing new opportunities or collaborations.
+      Feel free to reach out to me via email at
+      <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a> or connect with
+      me on LinkedIn. I’m always open to discussing new opportunities or collaborations.
     </p>
 
-      <p>
-        Thanks for visiting! This theme was forked from Kieran's
-        <a
-          targe"_blank"
-          href="https://github.com/kieranwong9865/astro-theme-vitesse"
-        >
-          Astro Vitesse Theme
-        </a>
-      </p>
+    <p>
+      Thanks for visiting! This theme was forked from Kieran's
+      <a
+        targe"_blank"
+        href="https://github.com/kieranwong9865/astro-theme-vitesse"
+      >
+        Astro Vitesse Theme
+      </a>
+    </p>
 
     <hr class="hr-line" />
     <p>Find me on</p>
     <p class="flex gap-x-4 gap-y-2 flex-wrap">
-      {siteConfig.socialLinks.map((link) => (
-        <a
-          aria-label={link.text}
-          href={link.href}
-          target="_blank"
-          class="prose-link"
-        >
-          <i class:list={[link.icon]} />
-          {link.text}
-        </a>
-      ))}
+      {
+        siteConfig.socialLinks.map((link) => (
+          <a
+            aria-label={link.text}
+            href={link.href}
+            target="_blank"
+            class="prose-link"
+          >
+            <i class:list={[link.icon]} />
+            {link.text}
+          </a>
+        ))
+      }
     </p>
   </article>
 </BaseLayout>
