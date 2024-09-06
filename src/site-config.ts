@@ -11,31 +11,31 @@ export const siteConfig = {
   socialLinks: [
     {
       text: 'GitHub',
-      href: '',
+      href: 'https://github.com/shouhanzen',
       icon: 'i-simple-icons-github',
       header: 'i-ri-github-line',
     },
-    {
-      text: 'Twitter',
-      href: '',
-      icon: 'i-simple-icons-x',
-      header: 'i-ri-twitter-x-line',
-    },
+    // {
+    //   text: 'Twitter',
+    //   href: '',
+    //   icon: 'i-simple-icons-x',
+    //   header: 'i-ri-twitter-x-line',
+    // },
     {
       text: 'Linkedin',
-      href: '',
+      href: 'https://www.linkedin.com/in/hanzen-shou-36b130183/',
       icon: 'i-simple-icons-linkedin',
     },
-    {
-      text: 'Instagram',
-      href: '',
-      icon: 'i-simple-icons-instagram',
-    },
-    {
-      text: 'Youtube',
-      href: '',
-      icon: 'i-simple-icons-youtube',
-    },
+    // {
+    //   text: 'Instagram',
+    //   href: '',
+    //   icon: 'i-simple-icons-instagram',
+    // },
+    // {
+    //   text: 'Youtube',
+    //   href: '',
+    //   icon: 'i-simple-icons-youtube',
+    // },
   ],
   header: {
     logo: {
